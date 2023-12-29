@@ -22,6 +22,22 @@ $resault=str_pad("test",8,".="); // "test.=.="
 //str_split
 $resault=str_split("test fateme",2); // ["te","st"," f","at","em","e"]
 
+//chop
+$str="i like php";
+chop($str,"php");  //  "i like"
+
+//substr
+substr($str,2,4); //   "like"
+
+//substr_count
+substr_count($str,"i"); // 2
+
+//strcmp
+$str1="i like php";
+strcmp($str,$str); //  0  | 0(means true)  -1(means false)
+
+//strstr
+strstr($str,"like"); // "php"
 
 
 
@@ -56,4 +72,3 @@ ksort($arr);  // ["ب"=>"behnaz","م"=>"mahsa","ن"=>"nima"]
 $arr1=["one"=>1,"three"=>3,"five"=>5,"six"=>66];
 $arr2=["two"=>2,"three"=>33,"four"=>4,"six"=>6];
 array_intersect_key($arr1,$arr2);  //["six"=>3,"six"=>66]
-
